@@ -1,0 +1,117 @@
+@font-face {
+    font-family: "FontdinerSwanky";
+    src: url(../fonts/FontdinerSwanky-Regular.ttf);
+}
+
+* {
+    font-family: "FontdinerSwanky";
+}
+
+
+
+.header {
+    grid-area: header;
+}
+
+.header-content {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+    align-content: center;
+    text-align: center;
+}
+
+.header-content .icons {
+    align-content: center;
+}
+
+.header-content .icons a {
+    text-decoration: none;
+}
+
+.nav {
+    grid-area: nav;
+}
+
+.main {
+    grid-area: main;
+    height: 400px;
+}
+
+.article {
+    grid-area: article;
+}
+
+.footer {
+    grid-area: footer;
+}
+
+.img-logo {
+    height: 110px;
+    width: 110px;
+}
+
+.grid-container {
+
+    grid-template-areas: 'logo header header header header'
+        'nav nav nav nav nav'
+        'main main main main main'
+        'footer footer footer footer footer';
+    background-color: blueviolet;
+    border-color: 1px solid black;
+    border-radius: 5px;
+    padding: 5px;
+    display: grid;
+}
+
+.box {
+    background-color: aquamarine;
+    border: 1px solid black;
+    padding: 30px;
+    margin: 5px;
+    text-align: center;
+    align-content: center;
+}
+
+
+ul {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-content: space-around;
+
+}
+
+li {
+    list-style-type: none;
+}
+
+.item-list {
+    background-color: tomato;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+
+.item-list a {
+    text-decoration: none;
+}
+
+.item-list:hover {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgb(218, 143, 113);
+    color: aliceblue;
+}
+
+.item-list a:hover {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgb(218, 143, 113);
+    color: aliceblue;
+}
+
+
+/* estilos de Quienes somos */
+
+.img-annie {
+    height: 200px;
+    width: 200px;
+}
